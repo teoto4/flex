@@ -13,6 +13,8 @@
     --star-fill:#ACACAC;
     --point-color: #EDA415;
     --border-color: #b6b6b6;
+    --hover-color: #87BCD9;
+    --hove-text-color: white;
 }
 
 body {
@@ -52,6 +54,10 @@ main {
 }
 
 
+.slider_good:nth-child(3) {
+    margin-right: 0px;
+}
+
 .description {
     margin-left: 43px;
 }
@@ -68,22 +74,126 @@ main {
     color: var(--text-color);
 }
 
-.desc_text {}
 
 .slider {
     position: relative;
 }
 
-.arrow-left{
-    position: absolute;
-    left: 60px;
-    top: 35%;
-}
-
 .arrow-right {
-    position: absolute;
-    right: 100px;
-    top: 35%;
-
     rotate: 180deg;
 }
+
+
+.arrow_box {
+    position: absolute;
+    width: 92.5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular_product {
+    margin-top: 82px;
+}
+
+
+.filter_list li {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 139px;
+    height: 45px;
+    margin-right: 13px;
+    padding: 10px 36px;
+    color: #1B5A7D;
+}
+
+.filter_list:last-child{
+    margin-right: 0px;
+}
+
+.filter_list li:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    color: var(--hove-text-color);
+}
+
+
+
+.prod_card_box {
+    margin-top: 53px;
+    display: flex;
+    flex-wrap: wrap;}
+    
+    .prod_card {
+    position: relative;
+    width: 308.83px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 22px 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 26.56px;
+}
+
+.prod_card:hover {
+    
+}
+
+.prod_card img {
+    margin: 0  auto;
+}
+
+.p_bord{
+    width: 100%;
+    text-align: start;
+}
+
+.prod_name {
+    font-size: 17.09px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.prod_price {
+    margin: 15.74px 0px;
+    color: var(--price-color);
+    font-size: 17.09px;
+    font-weight: 700;
+}
+
+.star {
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.star li {
+    margin-right: 10.82px;
+}
+
+.star li:last-child {
+    margin-right: 0px;
+}
+
+.star li:hover {
+    cursor: pointer;
+}
+
+.star li img {
+    width: 14.75px;
+    height: 14.65px;
+}
+
+.heart {
+    position: absolute;
+    left: 255.72px;
+    width: 27.54px;
+    height: 27.54px;
+    cursor: pointer;
+}
+
