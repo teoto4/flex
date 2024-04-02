@@ -138,7 +138,18 @@ main {
   cursor: pointer;
 }
 
+
+@keyframes rotateX {
+  0% {
+    transform: perspective(0px) rotateX(0deg);
+  }
+  100% {
+    transform: perspective(150px) rotateX(50deg);
+  }
+}
+
 .prod_card:hover {
+  animation: rotateX 1500ms alternate ease-in-out 1000ms;
     .p_bord {
         display: none;
     };
